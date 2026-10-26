@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Soft Stitch Studio | Handmade ♡</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- DEMO NOTICE -->
+  <div class="demo-bar">
+    ONLY FOR DEMO • Products, prices & images are placeholders
+  </div>
+
+
+  <!-- HEADER -->
+  <header class="header">
+
+    <a href="#" class="logo" onclick="showPage('home')">
+      <span>♡</span>
+      Soft Stitch
+      <small>STUDIO</small>
+    </a>
+
+    <!-- 3 LINE MENU -->
+    <button class="menu-btn" onclick="toggleMenu()">
+      <i></i>
+      <i></i>
+      <i></i>
+    </button>
+
+  </header>
+
+
+  <!-- MENU -->
+  <nav id="menu">
+
+    <a onclick="showPage('home')">
+      Home
+    </a>
+
+    <a onclick="showPage('shop')">
+      Shop
+    </a>
+
+    <a onclick="showPage('bouquets')">
+      Crochet Bouquets
+    </a>
+
+    <a onclick="showPage('custom')">
+      Custom Gifts
+    </a>
+
+    <a onclick="showPage('about')">
+      About Us
+    </a>
+
+    <a onclick="showPage('contact')">
+      Contact
+    </a>
+
+  </nav>
+
+
+  <!-- =========================
+       HOME
+  ========================== -->
+
+  <main id="home" class="page active">
+
+    <section class="hero">
+
+      <div class="hero-content">
+
+        <p class="eyebrow">
+          HANDMADE WITH LOVE ♡
+        </p>
+
+        <h1>
+          Little things,
+          <br>
+          <em>made special.</em>
+        </h1>
+
+        <p class="hero-text">
+          Crochet bouquets, custom gifts &
+          sweet handmade creations made
+          especially for your special moments.
+        </p>
+
+        <div class="hero-buttons">
+
+          <button
+            class="btn"
+            onclick="showPage('shop')"
+          >
+            Explore Collection
+          </button>
+
+          <button
+            class="text-btn"
+            onclick="showPage('custom')"
+          >
+            Create a custom gift →
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <div class="hero-image">
+
+        <img
+          src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=900&q=85"
+          alt="Demo handmade flowers"
+        >
+
+        <span>
+          Handmade ♡
+        </span>
+
+      </div>
+
+    </section>
+
+
+    <section class="intro">
+
+      <p class="eyebrow">
+        SOFT STITCH STUDIO
+      </p>
+
+      <h2>
+        Made slowly.
+        <br>
+        Loved forever.
+      </h2>
+
+      <p>
+        Every little creation is made with
+        patience, care and a whole lot of love.
+      </p>
+
+    </section>
+
+
+    <section class="home-cards">
+
+      <div
+        class="home-card"
+        onclick="showPage('bouquets')"
+      >
+
+        <span>01</span>
+
+        <h3>
+          Crochet Bouquets
+        </h3>
+
+        <p>
+          Flowers that never fade.
+        </p>
+
+      </div>
+
+
+      <div
+        class="home-card"
+        onclick="showPage('custom')"
+      >
+
+        <span>02</span>
+
+        <h3>
+          Custom Gifts
+        </h3>
+
+        <p>
+          Made especially for them.
+        </p>
+
+      </div>
+
+
+      <div
+        class="home-card"
+        onclick="showPage('shop')"
+      >
+
+        <span>03</span>
+
+        <h3>
+          Handmade Collection
+        </h3>
+
+        <p>
+          Little pieces to keep forever.
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+  <!-- =========================
+       SHOP
+  ========================== -->
+
+  <main id="shop" class="page">
+
+    <section class="page-title">
+
+      <p class="eyebrow">
+        THE COLLECTION
+      </p>
+
+      <h1>
+        Handmade little joys.
+      </h1>
+
+      <p>
+        Demo products — actual products
+        can be added later.
+      </p>
+
+    </section>
+
+
+    <section class="products">
+
+
+      <!-- PRODUCT -->
+
+      <article class="product">
+
+        <img
+          src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=800&q=85"
+          alt="Demo product"
+        >
+
+        <div class="product-info">
+
+          <small>
+            CROCHET
+          </small>
+
+          <h3>
+            XYZ Bloom Bouquet
+          </h3>
+
+          <p>
+            Soft handmade flower bouquet
+            for special moments.
+          </p>
+
+          <strong>
+            ₹799
+          </strong>
+
+          <button
+            class="btn small"
+            onclick="showPage('contact')"
+          >
+            Enquire
+          </button>
+
+        </div>
+
+      </article>
+
+
+      <!-- PRODUCT -->
+
+      <article class="product">
+
+        <img
+          src="https://images.unsplash.com/photo-1455582916367-25f75bfc9d9b?auto=format&fit=crop&w=800&q=85"
+          alt="Demo product"
+        >
+
+        <div class="product-info">
+
+          <small>
+            GIFT
+          </small>
+
+          <h3>
+            XYZ Love Box
+          </h3>
+
+          <p>
+            A cute handmade surprise
+            gift box.
+          </p>
+
+          <strong>
+            ₹599
+          </strong>
+
+          <button
+            class="btn small"
+            onclick="showPage('contact')"
+          >
+            Enquire
+          </button>
+
+        </div>
+
+      </article>
+
+
+      <!-- PRODUCT -->
+
+      <article class="product">
+
+        <img
+          src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=800&q=85"
+          alt="Demo product"
+        >
+
+        <div class="product-info">
+
+          <small>
+            HANDMADE
+          </small>
+
+          <h3>
+            XYZ Mini Charm
+          </h3>
+
+          <p>
+            A tiny handmade keepsake
+            for someone special.
+          </p>
+
+          <strong>
+            ₹349
+          </strong>
+
+          <button
+            class="btn small"
+            onclick="showPage('contact')"
+          >
+            Enquire
+          </button>
+
+        </div>
+
+      </article>
+
+
+      <!-- PRODUCT -->
+
+      <article class="product">
+
+        <img
+          src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=800&q=85"
+          alt="Demo product"
+        >
+
+        <div class="product-info">
+
+          <small>
+            BOUQUET
+          </small>
+
+          <h3>
+            XYZ Pastel Garden
+          </h3>
+
+          <p>
+            A soft pastel crochet
+            flower arrangement.
+          </p>
+
+          <strong>
+            ₹999
+          </strong>
+
+          <button
+            class="btn small"
+            onclick="showPage('contact')"
+          >
+            Enquire
+          </button>
+
+        </div>
+
+      </article>
+
+
+    </section>
+
+  </main>
+
+
+
+  <!-- =========================
+       BOUQUETS
+  ========================== -->
+
+  <main id="bouquets" class="page">
+
+    <section class="split-page">
+
+      <div class="split-image">
+
+        <img
+          src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=1000&q=85"
+          alt="Crochet bouquet demo"
+        >
+
+      </div>
+
+
+      <div class="split-content">
+
+        <p class="eyebrow">
+          CROCHET BOUQUETS
+        </p>
+
+        <h1>
+          Flowers that
+          <br>
+          <em>never fade.</em>
+        </h1>
+
+        <p>
+          Handmade crochet flowers designed
+          to make birthdays, anniversaries
+          and ordinary days feel a little
+          more special.
+        </p>
+
+        <button
+          class="btn"
+          onclick="showPage('contact')"
+        >
+          Order a Bouquet
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <section class="soft-section">
+
+      <h2>
+        Pick your colours.
+        <br>
+        We'll stitch the feeling.
+      </h2>
+
+      <p>
+        Pastel • Vibrant • Minimal •
+        Personalised wrapping
+      </p>
+
+    </section>
+
+  </main>
+
+
+
+  <!-- =========================
+       CUSTOM
+  ========================== -->
+
+  <main id="custom" class="page">
+
+    <section class="page-title">
+
+      <p class="eyebrow">
+        MADE FOR YOU
+      </p>
+
+      <h1>
+        Tell us your idea ♡
+      </h1>
+
+      <p>
+        Create something that feels
+        truly personal.
+      </p>
+
+    </section>
+
+
+    <section class="steps">
+
+
+      <div>
+
+        <span>
+          01
+        </span>
+
+        <h3>
+          Share your idea
+        </h3>
+
+        <p>
+          Tell us the occasion,
+          colours and your budget.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <span>
+          02
+        </span>
+
+        <h3>
+          We design
+        </h3>
+
+        <p>
+          We'll suggest a handmade
+          concept for you.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <span>
+          03
+        </span>
+
+        <h3>
+          We stitch
+        </h3>
+
+        <p>
+          Your custom gift is
+          lovingly made.
+        </p>
+
+      </div>
+
+
+    </section>
+
+
+    <section class="custom-box">
+
+      <h2>
+        Have something in mind?
+      </h2>
+
+      <p>
+        Tell us what you want to create.
+      </p>
+
+      <button
+        class="btn"
+        onclick="showPage('contact')"
+      >
+        Start an Enquiry
+      </button>
+
+    </section>
+
+  </main>
+
+
+
+  <!-- =========================
+       ABOUT
+  ========================== -->
+
+  <main id="about" class="page">
+
+    <section class="about-page">
+
+      <p class="eyebrow">
+        OUR LITTLE STORY
+      </p>
+
+      <h1>
+        Handmade,
+        <br>
+        <em>from the heart.</em>
+      </h1>
+
+      <p>
+        Soft Stitch Studio is a handmade
+        creative studio making crochet
+        bouquets, custom gifts and little
+        pieces designed to make moments
+        more special.
+      </p>
+
+      <p>
+        Each creation is made with patience,
+        care and attention to the tiny details
+        that make handmade gifts feel different.
+      </p>
+
+
+      <div class="about-note">
+        ♡ Handmade
+        <span>•</span>
+        Thoughtful
+        <span>•</span>
+        Custom
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+  <!-- =========================
+       CONTACT
+  ========================== -->
+
+  <main id="contact" class="page">
+
+    <section class="contact-page">
+
+      <div>
+
+        <p class="eyebrow">
+          LET'S CREATE ♡
+        </p>
+
+        <h1>
+          Have a gift idea?
+        </h1>
+
+        <p>
+          Send us a DM for orders,
+          customisations and availability.
+        </p>
+
+      </div>
+
+
+      <div class="contact-card">
+
+        <small>
+          INSTAGRAM
+        </small>
+
+        <h2>
+          @soft.stitch.studio._
+        </h2>
+
+        <p>
+          DM for orders & customisations
+        </p>
+
+        <a
+          href="https://instagram.com/soft.stitch.studio._"
+          target="_blank"
+          class="btn"
+        >
+          Open Instagram
+        </a>
+
+
+        <hr>
+
+
+        <small>
+          LOCATION
+        </small>
+
+        <h3>
+          Sardarshahar, Rajasthan
+        </h3>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <b>
+      Soft Stitch Studio ♡
+    </b>
+
+    <span>
+      Handmade • Custom Gifts
+    </span>
+
+    <span>
+      © 2026 • Demo Website
+    </span>
+
+  </footer>
+
+
+  <script src="app.js"></script>
+
+</body>
+</html>
